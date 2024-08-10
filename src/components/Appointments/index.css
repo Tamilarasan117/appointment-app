@@ -1,0 +1,140 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom,#fbc7d4,#9796f0);
+}
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+}
+.appointment-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-heading {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #171f46;
+}
+.appointment-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.title-label {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #171f46;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.input {
+  padding: 7px;
+  border: 2px solid #b5b7c4;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  width: 80%;
+}
+.button {
+  background-color: #8b5cf6;
+  border: none;
+  border-radius: 7px;
+  width: 75px;
+  height: 35px;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.img-container {
+  width: 50%;
+}
+.img {
+  width: 100%;
+}
+.line {
+  width: 100%;
+  border-color: #b5b7c4;
+  background-color: #b5b7c4;
+  margin: 25px 0;
+}
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+}
+.head-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.appointments-heading {
+  color: #171f46;
+  font-size: 22px;
+  font-weight: bold;
+}
+.starred-button {
+  border-radius: 50px;
+  border: 2px solid #b5b7c4;
+  color: #9897f0;
+  background-color: transparent;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.select-appointment-button {
+  background-color:  #8b5cf6;
+  color: #ffffff;
+}
+.appointments-lists {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 900px) {
+  .img {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .img {
+    display: none;
+  }
+  .appointment-form {
+    width: 100%;
+  }
+  .input {
+    width: 90%;
+    border: 1px solid #b5b7c4;
+  }
+  .img-container {
+    width: 0%;
+  }
+  .main-heading {
+    font-size: 30px;
+  }
+}
